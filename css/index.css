@@ -1,0 +1,67 @@
+:root{
+    --navlogo: #ffc107;
+    --bglogo:beige;
+    --trdcolor:rgb(221, 148, 88);
+}
+
+body{
+    background-color:var(--bglogo);
+    box-sizing: border-box;
+}
+.bgcolor{
+    background-color: var(--bgcolor);
+}
+.navcolor{
+    background-color: var(--navlogo);
+}
+.trdcolor{
+    background-color: var(--trdcolor)
+}
+#search{
+    outline: none;
+    border: 4px solid transparent;
+}
+#search:focus{
+    border: 4px solid var(--trdcolor);
+}
+/* THE SIDENAV MENU */
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: var(--trdcolor); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 1rem; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow:none; 
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right:1rem;
+    font-size: 2rem;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+}
