@@ -31,7 +31,7 @@
        <a class=" " href="#" style="color: red;"> <i class="fas fa-minus    "></i> Delete Product</a>
       <div class="pl-4">
         <button class="btn btn-light"  data-toggle="modal" data-target="#modelId"> Sign up</button>
-        <button class="btn btn-danger"  data-toggle="modal" data-target="#modelId"> Log in</button>
+        <button class="btn btn-danger" data-toggle="modal" data-target="#modelId2""> Log in</button>
       </div>
     </div>
     </div>
@@ -82,6 +82,45 @@
         });
     </script>
 
+<!-- Modal -->
+<div class="modal fade" id="modelId2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+                <div class="modal-header">
+                        <h5 class="modal-title">Log In</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="form-group">
+                      <label for=""></label>
+                      <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Enter your Username ">
+                      <small class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-group">
+                      <label for=""></label>
+                      <input type="password" class="form-control" name="" id="" placeholder="Enter your password">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn navcolor" data-dismiss="modal">Close</button>
+                <button type="button" class="btn trdcolor">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#exampleModal').on('show.bs.modal', event => {
+        var button = $(event.relatedTarget);
+        var modal = $(this);
+        // Use above variables to manipulate the DOM
+        
+    });
+</script>
 
 
 
